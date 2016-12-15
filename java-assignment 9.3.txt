@@ -1,0 +1,25 @@
+package myPack;
+
+import java.util.*;
+
+public class MapTest {
+	public static void main(String args[]){
+		HashMap<Integer,String> mymap= new HashMap<Integer,String>();
+		mymap.put(101,"Aman");
+		mymap.put(102,"Bhavya");
+		mymap.put(103,"Chetan");
+		mymap.put(104,"Deepak");
+		mymap.put(105,"Eena");
+		mymap.put(106,"Falak");
+		
+		System.out.println("Various employees are :");
+		Set<Integer> mykeys= mymap.keySet();
+		Iterator<Integer> itrkeys= mykeys.iterator();
+		while(itrkeys.hasNext())
+		{
+			int key= itrkeys.next();
+			System.out.println(mymap.get(key));
+		}
+		
+	}
+}
